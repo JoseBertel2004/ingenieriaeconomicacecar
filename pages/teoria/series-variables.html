@@ -1,0 +1,168 @@
+</html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series Variables - Curso de Ingenieria Economica</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Teoria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Teoria</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="series-uniformes.html">Series Uniformes</a></li>
+                            <li><a class="dropdown-item" href="series-variables.html">Series Variables</a></li>
+                            <li><a class="dropdown-item" href="amortizacion-capitalizacion.html">Amortización y
+                                    Capitalización</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../ejercicios.html">Ejercicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../startbootstrap-agency-gh-pages-master/index.html">MOOC</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Series Variables</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="definicion-tab" data-bs-toggle="tab" data-bs-target="#definicion"
+                    type="button" role="tab" aria-controls="definicion" aria-selected="true">Qué son y para qué
+                    sirven</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="valorpresenteserievariable-tab" data-bs-toggle="tab"
+                    data-bs-target="#valorpresenteserievariable" type="button" role="tab"
+                    aria-controls="valorpresenteserievariable" aria-selected="false">Valor Presente (VP) de una serie
+                    variable</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="valorfuturoserievariable-tab" data-bs-toggle="tab"
+                    data-bs-target="#valorfuturoserievariable" type="button" role="tab"
+                    aria-controls="valorfuturoserievariable" aria-selected="false">Valor Futuro (VF) de una serie
+                    variable</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="cuotacrecremental-tab" data-bs-toggle="tab"
+                    data-bs-target="#cuotacrecremental" type="button" role="tab" aria-controls="cuotacrecremental"
+                    aria-selected="false">Cuota Creciente o Decreciente</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="cuotageometrica-tab" data-bs-toggle="tab" data-bs-target="#cuotageometrica"
+                    type="button" role="tab" aria-controls="cuotageometrica" aria-selected="false">Cuota Creciente en
+                    Forma Geométrica</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="definicion" role="tabpanel" aria-labelledby="definicion-tab">
+                <h4>Qué son y para qué sirven</h4>
+                <p>Las series variables son flujos de efectivo que cambian de un período a otro. Estos flujos pueden
+                    aumentar o disminuir y son utilizados en situaciones donde los ingresos o pagos no son constantes,
+                    como
+                    en inversiones con retornos variables, bonos escalonados o pagos escalonados de deudas.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="valorpresenteserievariable" role="tabpanel"
+                aria-labelledby="valorpresenteserievariable-tab">
+                <h4>Valor Presente (VP) de una serie variable:</h4>
+                <h4><small>Fórmula:</small></h4>
+                <p>VP = Σ [A_t / (1 + i)^t]</p>
+                <p><b>Donde:</b></p>
+                <ul>
+                    <li>A_t = Monto del flujo de efectivo en el período t</li>
+                    <li>i = Tasa de interés por período</li>
+                    <li>n = Número total de períodos</li>
+                    <li>t = Período específico</li>
+                </ul>
+                <h4><small>Ejemplo de Valor Presente:</small></h4>
+                <p>Supongamos que recibes los siguientes flujos de efectivo anuales: $1,000 en el primer año, $1,500 en el
+                    segundo año, y $2,000 en el tercer año con una tasa de interés del 5% anual. El valor presente se
+                    calcula como:</p>
+                <p>VP = 1000 / (1 + 0.05)^1 + 1500 / (1 + 0.05)^2 + 2000 / (1 + 0.05)^3 ≈ $4,056.05</p>
+            </div>
+            <div class="tab-pane fade" id="valorfuturoserievariable" role="tabpanel"
+                aria-labelledby="valorfuturoserievariable-tab">
+                <h4>Valor Futuro (VF) de una serie variable:</h4>
+                <h4><small>Fórmula:</small></h4>
+                <p>VF = Σ [A_t * (1 + i)^(n-t)]</p>
+                <p><b>Donde:</b></p>
+                <ul>
+                    <li>A_t = Monto del flujo de efectivo en el período t</li>
+                    <li>i = Tasa de interés por período</li>
+                    <li>n = Número total de períodos</li>
+                    <li>t = Período específico</li>
+                </ul>
+                <h4><small>Ejemplo de Valor Futuro:</small></h4>
+                <p>Supongamos que inviertes los mismos flujos de efectivo anuales con una tasa de interés del 5% anual. El
+                    valor futuro se calcula como:</p>
+                <p>VF = 1000 * (1 + 0.05)^(3-1) + 1500 * (1 + 0.05)^(3-2) + 2000 * (1 + 0.05)^(3-3) ≈ $4,727.50</p>
+            </div>
+            <div class="tab-pane fade" id="cuotacrecremental" role="tabpanel" aria-labelledby="cuotacrecremental-tab">
+                <h4>Cuota Creciente o Decreciente</h4>
+                <h4><small>Fórmula para una Cuota Creciente Lineal (A_t):</small></h4>
+                <p>A_t = A_1 + d * (t - 1)</p>
+                <p><b>Donde:</b></p>
+                <ul>
+                    <li>A_1: Cuota inicial</li>
+                    <li>d: Incremento fijo en cada período</li>
+                    <li>t: Período específico</li>
+                </ul>
+                <h4><small>Ejemplo de Cuota Creciente Lineal:</small></h4>
+                <p>Si la cuota inicial es $100 y aumenta $10 cada período, las cuotas serán:</p>
+                <p>A_1 = 100, A_2 = 110, A_3 = 120, ...</p>
+            </div>
+            <div class="tab-pane fade" id="cuotageometrica" role="tabpanel" aria-labelledby="cuotageometrica-tab">
+                <h4>Cuota Creciente en Forma Geométrica</h4>
+                <h4><small>Fórmula para una Cuota Creciente Geométrica (A_t):</small></h4>
+                <p>A_t = A_1 * (1 + g)^(t - 1)</p>
+                <p><b>Donde:</b></p>
+                <ul>
+                    <li>A_1: Cuota inicial</li>
+                    <li>g: Tasa de crecimiento</li>
+                    <li>t: Período específico</li>
+                </ul>
+                <h4><small>Ejemplo de Cuota Creciente Geométrica:</small></h4>
+                <p>Si la cuota inicial es $100 y crece un 5% cada período, las cuotas serán:</p>
+                <p>A_1 = 100, A_2 = 100 * 1.05 = 105, A_3 = 105 * 1.05 = 110.25, ...</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Curso de Ingenieria Economica</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
